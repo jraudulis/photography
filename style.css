@@ -1,0 +1,2076 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/* Opening screen stye*/
+
+#openingsection {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/openingpicture.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
+
+
+.openinglogo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.openinglogo img{
+	width: 100%;
+	height: auto;
+}
+
+/*
+#openingsection h1{
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	font-size: 80px;
+	letter-spacing: 5px;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+#openingsection h2{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 70px;
+	padding-left: 350px;
+	letter-spacing: 5px; 
+	color: #FFFFFF;
+}
+*/
+
+a{text-decoration: none;}
+
+/* Opening screen stye*/
+
+
+/* main page style */
+
+ main {
+	width: 100%;
+	height: 100vh;
+	background: #000000;
+	
+}
+
+#hero-image{
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/aboutmepicture.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	background-color: #000000;
+	padding-bottom: 100px;
+}
+
+
+/* new navbar*/
+
+.topnav {
+	
+	text-align: center;
+ 	height: auto;
+	padding-top: 50px;
+}
+
+.topnav a {
+	display: inline-block;
+  	text-decoration: none;
+	color: #FFFFFF;
+	padding: 15px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	position: relative;
+    cursor: pointer;
+}
+
+.topnav a:before, .topnav a:after{
+	position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 1px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+  .topnav a:before{
+	left: 0px;
+    top: 0px;
+}
+  .topnav a:after{
+	right: 0px;
+    bottom: 0px;
+}
+
+  .topnav a:hover:before, .topnav a:hover:after{
+	opacity: 1;
+    width: 100%;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+/* new navbar*/
+
+/* original nav bar 
+
+#navbar{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	color: #FFFFFF;
+	display: flex;
+	padding-top: 50px;
+}
+
+.logo{
+	width: 30%;
+	height: auto;
+	padding-left: 50px;
+	order: 1;
+}
+
+.logo h1{
+	font-family:'Poppins', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 30px;
+}
+
+.logo h2{
+	font-family:'Poppins', sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	letter-spacing: 2px; 
+	padding-left: 140px;
+}
+
+
+.links{
+	width: 60%;
+	height: auto;
+	padding: 30px 0 0 600px;
+	order: 2;
+}
+
+.links a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 15px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	position: relative;
+    cursor: pointer;
+	
+}
+
+.links a:before, .links a:after{
+	position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 1px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+  .links a:before{
+	left: 0px;
+    top: 0px;
+}
+  .links a:after{
+	right: 0px;
+    bottom: 0px;
+}
+
+  .links a:hover:before, .links a:hover:after{
+	opacity: 1;
+    width: 100%;
+}
+
+*/
+
+.aboutme{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	
+  	
+}
+
+.aboutmehead{
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.aboutmepar {
+	width: 50%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin: auto;
+	padding: 50px 0 50px 0;
+}
+
+.aboutmepar p{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 5px;
+	line-height: 40px;
+	font-family: 'Poppins', sans-serif;
+	opacity: 1;
+}
+
+#socialmedia{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.socialicon{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	transition: transform .2s;
+}
+
+.fa:hover {
+  opacity: 0.7;
+	transform: scale(1.2);
+}
+
+.fa-instagram{
+	background-color: transparent;
+  	color: white;
+}
+
+.fa-facebook{
+	background-color: transparent;
+  	color: white;
+}
+
+.fa-twitter{
+	background-color: transparent;
+  	color: white;
+}
+
+.fa-linkedin{
+	background-color: transparent;
+  	color: white;
+}
+
+/* main page style */
+
+
+/*landscapes Section*/
+
+#landscapes {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/landscapehero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.landscapetext{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	
+  	
+}
+
+.landscapehead{
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.grid{
+	
+	height: 1000px;
+	display: grid;
+	grid-template-columns: 720px 720px;
+	justify-content: center;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	margin-top: 100px;
+	overflow: hidden;
+	
+}
+
+.block1{
+	overflow: hidden;
+
+}
+
+.block2{
+	overflow: hidden;
+}
+
+.block3{
+	overflow: hidden;
+}
+
+.block4{
+	overflow: hidden;
+}
+
+.gridimage{
+	width: 100%;
+	height:100%;
+	background-image: url(images/scotlandspaceholder.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block1:hover .gridimage,
+.blok1:focus .gridimage {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+
+}
+
+.gridimage2{
+	width: 100%;
+	height:100%;
+	background-image: url(images/icelandgrid.png);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block2:hover .gridimage2,
+.blok2:focus .gridimage2{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.gridimage3{
+	width: 100%;
+	height:100%;
+	background-image: url(images/spainplacehoolder.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block3:hover .gridimage3,
+.blok3:focus .gridimage3{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.gridimage4{
+	width: 100%;
+	height:100%;
+	background-image: url(images/italyspaceholder.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block4:hover .gridimage4,
+.blok4:focus .gridimage4 {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+  .grid h2{
+	display: none;
+	color: #FFFFFF;
+	font-size: 70px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+	position: absolute;
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	height: 120px;
+	text-align: center;
+}
+
+.gridimage:hover h2,
+.gridimage:focus h2 {
+  display: block;
+}
+.gridimage2:hover h2,
+.gridimage2:focus h2 {
+  display: block;
+}
+
+.gridimage3:hover h2,
+.gridimage3:focus h2 {
+  display: block;
+}
+
+.gridimage4:hover h2,
+.gridimage4:focus h2 {
+  display: block;
+}
+
+#footer-text{
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	background-color: #000000;
+	text-align: center;
+}
+
+#footer-text h3, p{
+	color: #FFFFFF;
+	font-size: 100px;
+	font-weight: 100;
+	letter-spacing: 5px;
+	opacity: 0.1;
+	font-family: 'Mrs Saint Delafield', cursive;
+}
+
+/*Landscapes section*/
+
+
+/*Motors section*/
+
+#motors {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/motorsheroimage.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.motorstext{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	
+  	
+}
+
+.motorshead{
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.grid{
+	
+	height: 1000px;
+	display: grid;
+	grid-template-columns: 720px 720px;
+	justify-content: center;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	margin-top: 100px;
+	
+}
+
+.block1{
+	overflow: hidden;
+
+}
+
+.block2{
+	overflow: hidden;
+}
+
+.block3{
+	overflow: hidden;
+}
+
+.block4{
+	overflow: hidden;
+}
+
+.motors-gridimage{
+	width: 100%;
+	height:100%;
+	background-image: url(images/hyundaigrid.JPG);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block1:hover .motors-gridimage,
+.blok1:focus .motors-gridimage {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+
+}
+
+.motors-gridimage2{
+	width: 100%;
+	height:100%;
+	background-image: url(images/lexusgrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block2:hover .motors-gridimage2,
+.blok2:focus .motors-gridimage2{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.motors-gridimage3{
+	width: 100%;
+	height:100%;
+	background-image: url(images/bmwgrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block3:hover .motors-gridimage3,
+.blok3:focus .motors-gridimage3{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.motors-gridimage4{
+	width: 100%;
+	height:100%;
+	background-image: url(images/porschegrid.JPG);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block4:hover .motors-gridimage4,
+.blok4:focus .motors-gridimage4 {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+  .grid h2{
+	display: none;
+	color: #FFFFFF;
+	font-size: 70px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+	position: absolute;
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	height: 120px;
+	text-align: center;
+}
+
+.motors-gridimage:hover h2,
+.motors-gridimage:focus h2 {
+  display: block;
+}
+.motors-gridimage2:hover h2,
+.motors-gridimage2:focus h2 {
+  display: block;
+}
+
+.motors-gridimage3:hover h2,
+.motors-gridimage3:focus h2 {
+  display: block;
+}
+
+.motors-gridimage4:hover h2,
+.motors-gridimage4:focus h2 {
+  display: block;
+}
+
+/*Motors section*/
+
+
+/*Portraits section*/
+
+#portraits {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/portraitshero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.portraitstext{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	
+  	
+}
+
+.portraitshead{
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.grid{
+	
+	height: 1000px;
+	display: grid;
+	grid-template-columns: 720px 720px;
+	justify-content: center;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	margin-top: 100px;
+	
+}
+
+.block1{
+	overflow: hidden;
+
+}
+
+.block2{
+	overflow: hidden;
+}
+
+.block3{
+	overflow: hidden;
+}
+
+.block4{
+	overflow: hidden;
+}
+
+.portrait-gridimage{
+	width: 100%;
+	height:100%;
+	background-image: url(images/annagrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block1:hover .portrait-gridimage,
+.blok1:focus .portrait-gridimage {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+
+}
+
+.portrait-gridimage2{
+	width: 100%;
+	height:100%;
+	background-image: url(images/emmagrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block2:hover .portrait-gridimage2,
+.blok2:focus .portrait-gridimage2{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.portrait-gridimage3{
+	width: 100%;
+	height:100%;
+	background-image: url(images/jacobgrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block3:hover .portrait-gridimage3,
+.blok3:focus .portrait-gridimage3{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.portrait-gridimage4{
+	width: 100%;
+	height:100%;
+	background-image: url(images/lisagrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block4:hover .portrait-gridimage4,
+.blok4:focus .portrait-gridimage4 {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+  .grid h2{
+	display: none;
+	color: #FFFFFF;
+	font-size: 70px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+	position: absolute;
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	height: 120px;
+	text-align: center;
+}
+
+.portrait-gridimage:hover h2,
+.portrait-gridimage:focus h2 {
+  display: block;
+}
+.portrait-gridimage2:hover h2,
+.portrait-gridimage2:focus h2 {
+  display: block;
+}
+
+.portrait-gridimage3:hover h2,
+.portrait-gridimage3:focus h2 {
+  display: block;
+}
+
+.portrait-gridimage4:hover h2,
+.portrait-gridimage4:focus h2 {
+  display: block;
+}
+
+/*Portraits section*/
+
+
+/*Architeccture section*/
+
+#architecture {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/architecturehero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.archtext{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	
+  	
+}
+
+.archhead{
+	color: #FFFFFF;
+	font-size: 80px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.grid{
+	
+	height: 1000px;
+	display: grid;
+	grid-template-columns: 720px 720px;
+	justify-content: center;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	margin-top: 100px;
+	
+}
+
+.block1{
+	overflow: hidden;
+
+}
+
+.block2{
+	overflow: hidden;
+}
+
+.block3{
+	overflow: hidden;
+}
+
+.block4{
+	overflow: hidden;
+}
+
+.arch-gridimage{
+	width: 100%;
+	height:100%;
+	background-image: url(images/rigagrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block1:hover .arch-gridimage,
+.blok1:focus .arch-gridimage {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+
+}
+
+.arch-gridimage2{
+	width: 100%;
+	height:100%;
+	background-image: url(images/prgrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block2:hover .arch-gridimage2,
+.blok2:focus .arch-gridimage2{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.arch-gridimage3{
+	width: 100%;
+	height:100%;
+	background-image: url(images/miamigrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block3:hover .arch-gridimage3,
+.blok3:focus .arch-gridimage3{
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+.arch-gridimage4{
+	width: 100%;
+	height:100%;
+	background-image: url(images/nygrid.jpg);
+	filter: grayscale(100%);
+	background-position: center;
+	background-size: cover;
+	transition: all .5s;
+}
+
+.block4:hover .arch-gridimage4,
+.blok4:focus .arch-gridimage4 {
+  transform: scale(1.2);
+	filter: grayscale(0%);
+}
+
+  .grid h2{
+	display: none;
+	color: #FFFFFF;
+	font-size: 70px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+	position: absolute;
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	height: 120px;
+	text-align: center;
+}
+
+.arch-gridimage:hover h2,
+.arch-gridimage:focus h2 {
+  display: block;
+}
+.arch-gridimage2:hover h2,
+.arch-gridimage2:focus h2 {
+  display: block;
+}
+
+.arch-gridimage3:hover h2,
+.arch-gridimage3:focus h2 {
+  display: block;
+}
+
+.arch-gridimage4:hover h2,
+.arch-gridimage4:focus h2 {
+  display: block;
+}
+
+
+/*Architeccture section*/
+
+/*Scotlnd gallery*/
+
+#gallery-main{
+	width: 100%;
+	height: 800px;
+	background: #000000;
+}
+
+
+.scotgal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.scothead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.gallery{
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	grid-gap: 2vmin;
+	grid-auto-flow: dense;
+	background: #000000;
+	
+}
+
+.img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Scotlad Gallery*/
+
+
+/*Spain Gallery*/
+
+.spaingal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.spainhead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.spain-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .spain-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .spain-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .spain-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .spain-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .spain-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.spain-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .spain-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+
+/*Spain Gallery*/
+
+
+/*Iceland Gallery*/
+
+.icegal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.icehead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.ice-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .ice-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .ice-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .ice-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .ice-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .ice-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.ice-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .ice-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+
+/*Iceland Gallery*/
+
+
+/*Italy Gallery*/
+
+.itgal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.ithead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.it-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .it-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .it-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .it-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .it-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .it-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.it-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .it-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Italy Gallery*/
+
+
+/*Hyundai Gallery*/
+
+.hyungal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+	position: absolute;
+
+  	
+}
+
+.hyunhead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.hyun-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .hyun-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .hyun-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .hyun-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .hyun-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .hyun-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.hyun-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .hyun-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Hyundai Gallery*/
+
+
+/*Lexus Gallery*/
+
+.lexgal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.lexhead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.lex-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .lex-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .lex-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .lex-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .lex-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .lex-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.lex-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .lex-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Lexus Gallery*/
+
+
+/*BMW Gallery*/
+
+.bmwgal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.bmwhead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bmw-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .bmw-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .bmw-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .bmw-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .bmw-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .bmw-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.bmw-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .bmw-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*BMW Gallery*/
+
+
+/*Porsche Gallery*/
+
+.porscgal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.porschead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.porsc-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .porsc-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .porsc-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .porsc-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .porsc-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .porsc-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.porsc-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .porsc-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Porsche Gallery*/
+
+
+/*Anna Gallery*/
+
+.annagal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.annahead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.anna-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .anna-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .anna-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .anna-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .anna-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .anna-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.anna-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .anna-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Anna Gallery*/
+
+
+/*Emma Gallery*/
+
+.emmagal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.emmahead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.emma-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .emma-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .emma-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .emma-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .emma-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .emma-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.emma-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .emma-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Emma Gallery*/
+
+
+/*Jacob Gallery*/
+
+.jacobgal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.jacobhead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.jacob-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .jacob-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .jacob-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .jacob-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .jacob-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .jacob-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.jacob-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .jacob-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+
+/*Jacob Gallery*/
+
+
+/*Lisa Gallery*/
+
+.lisagal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.lisahead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.lisa-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .lisa-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .lisa-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .lisa-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .lisa-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .lisa-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.lisa-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .lisa-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Lisa Gallery*/
+
+
+/*Riga Gallery*/
+
+.rigagal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.rigahead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.riga-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .riga-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .riga-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .riga-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .riga-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .riga-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.riga-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .riga-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Riga Gallery*/
+
+
+/*Prague Gallery*/
+
+.pragal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.prahead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.pra-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .pra-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .pra-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .pra-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .pra-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .pra-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.pra-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .pra-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Prague gallery*/
+
+
+/*Miami Galery*/
+
+.migal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.mihead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.mi-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .mi-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .mi-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .mi-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .mi-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .mi-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.mi-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .mi-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*Miami Galery*/
+
+
+/*NewYork Gallery*/
+
+
+.nygal-head{
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 200px;
+  	
+}
+
+.nyhead{
+	color: #FFFFFF;
+	font-size: 150px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+
+.ny-img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery .ny-img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .ny-img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.gallery .ny-img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.gallery .ny-img:nth-child(6n+7){
+	grid-row-start: span 2;
+}
+ .gallery .ny-img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.ny-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+
+.gallery .ny-img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+
+/*NewYrok Gallery*/
+
+@media screen and (max-width: 600px){
+	.topnav a{
+		float: left;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+   float: right;
+	display: inline-block;
+	  padding: 0;
+	
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* original nav bar media query
+@media screen and (max-width: 1300px) {
+	
+	.links{
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	
+	#navbar h1, h2{
+		display: none;
+	}
+	
+	.logo{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 570px) {
+	
+	
+}
+
+*/
+
+
+
+	
+	
+/* for lette logo
+@media only screen and (max-width: 820px) {
+  #openingsection h1 {
+    font-size: 7vw;
+	text-align: center;
+  }
+	
+	#openingsection h2{
+		font-size: 3vw;
+		padding: 0;
+	}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

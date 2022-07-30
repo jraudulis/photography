@@ -14,41 +14,22 @@
 	
 	
 	<div id="gallery-main">
-			<div class="topnav" id="myTopnav">
- 					<a href="main.html">Main</a>
-					<a href="landscapes.html">Landscapes</a>
-					<a href="motors.html">Motors</a>
-					<a href="portrait.html">Portrait</a>
-					<a href="architecture.html">Architecture</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-	<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-		
-			
-			<!--<div id="navbar">
-				<div class="logo">
-					<h1>JURIS RAUDULIS</h1>
-					<h2>Photography</h2>
-				</div>
-				<div class="links">
-					<a href="main.html">Main</a>
-					<a href="landscapes.html">Landscapes</a>
-					<a href="motors.html">Motors</a>
-					<a href="portrait.html">Portrait</a>
-					<a href="architecture.html">Architecture</a>
-
-				</div>-->
+		<nav class="navbar">
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="navbar-links">
+			 <ul>
+				<li><a href="main.html">Main</a></li>
+				<li><a href="landscapes.html">Landscapes</a></li>
+				<li><a href="motors.html">Motors</a></li>
+				<li><a href="portrait.html">Portraits</a></li>
+				<li><a href="travel.html">Travel</a></li>
+			 </ul>
+		 </div>
+		</nav>
 		
 		<div class="rigagal-head">
 			<h1 class="rigahead">Riga</h1>
@@ -80,12 +61,20 @@ function myFunction() {
 		</div>
 	</div>	
 	
-		<div id="footer-text">
+		<div class="footer-text">
 			<h3>Juris Raudulis Photogrphy</h3>
 			<p>All rights reserved</p>
 		</div>
-		
+
+		<script>
+			const toggleButton = document. getElementsByClassName('toggle-button')[0]
+			const navbarLinks = document. getElementsByClassName('navbar-links')[0]
 	
+			toggleButton.addEventListener('click', () => {
+			navbarLinks.classList.toggle('active')
+	
+			})
+		</script>
 <body>
 </body>
 </html>
